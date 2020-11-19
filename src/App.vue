@@ -49,7 +49,10 @@ transform: translateY(-150px);
   padding: 30px;
   background-color: #000;
   display: flex;
-  
+      @media only screen and (max-width: $breakpoint-phone) {
+      padding: 16px;
+      
+	}
   a {
   font-weight: 500;
   color: #fff;
@@ -62,7 +65,15 @@ transform: translateY(-150px);
   padding: 8px 0 8px 0;
   margin: 32px 24px 16px 48px;
   transition: all 0.2s ease-in-out;
-      border-bottom: rgba($color: #000000, $alpha: 0) 4px solid;
+  border-bottom: rgba($color: #000000, $alpha: 0) 4px solid;
+
+    @media only screen and (max-width: $breakpoint-phone) {
+      font-size: 14px;
+      padding: 4px 0 4px 0;
+      margin: 0 8px 8px 24px;
+      
+	}
+
   &:hover {
       border-bottom: #545454 4px solid;
   }
