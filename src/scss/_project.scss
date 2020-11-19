@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+@import "./_variables.scss";
+
+.father {
+	max-width: 1008px;
+	margin: 0 auto;
+	padding: 24px ;
+}
+
+.hide-mobile {
+	
+	@media only screen and (max-width: $breakpoint-phone) {
+		display: none;
+		}
+}
+/* Flex */ 
+
+.flex {
+	display: flex;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		flex-wrap: wrap;
+		img {
+			max-width: initial;
+			width: 100%;
+		}
+}
+}
+
+.h-fit {
+	flex: 1 1 auto;	
+}
+
+.center {
+	justify-content: center;
+}
+
+.left {
+	justify-content: flex-start;
+}
+.right {
+	justify-content: flex-end;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+/* Padding */ 
+.pad-top-1x {
+	padding: 32px 0 0 0;
+}
+
+.pad-top-2x {
+	padding: 40px 0 0 0;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 32px 0 0 0;	
+	}
+}
+.pad-top-3x {
+	padding: 64px 0 0 0;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 48px 0 0 0;	
+	}
+}
+.pad-top-4x {
+	padding: 96px 0 0 0;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 64px 0 0 0;	
+	}
+}
+.pad-top-5x {
+	padding: 112px 0 0 0;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 56px 0 0 0;	
+	}
+}
+
+.pad-top-1x-mobile {
+	// padding: 24px 0 0 0;
+	@media only screen and (max-width: $breakpoint-phone) {
+		padding: 16px 0 0 0;	
+	}
+}
+/* Grid */ 
+
+.grid-container {
+  display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-column-gap: 48px;
+	grid-row-gap: 0;
+
+	@media only screen and (max-width: $breakpoint-phone) {
+		grid-template-columns: 1fr;
+	}
+}
+.grid-item {
+	@media only screen and (max-width: $breakpoint-phone) {
+		max-width: calc(100vw - 48px);
+	}
+}
+
+.item-full {
+	grid-column: 1/5;
+	@media only screen and (max-width: $breakpoint-phone) {
+		grid-column: 1;
+	}
+	}
+
+.item-2 {
+	grid-column: 1/2;
+	@media only screen and (max-width: $breakpoint-phone) {
+		grid-column: 1;
+	}
+	}
+.item-3 {
+	grid-column: 2/5;
+	@media only screen and (max-width: $breakpoint-phone) {
+		grid-column: 1;
+	}
+}
+
+
+/* img */ 
+.img-plus {
+	max-width:90%;
+}
+.img-single {
+	max-width:100%;
+}
+/* Text and Typography */ 
+h1 {
+font-family: Jost;
+font-size: 180px;
+font-style: normal;
+font-weight: 500;
+line-height: 144%;
+
+
+@media only screen and (max-width: $breakpoint-phone) {
+	font-size: 80px;
+	}
+
+}
