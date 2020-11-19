@@ -10,11 +10,11 @@
         <h2>Alexandre Schrammel</h2>
         <p class="pad-top-1x">
           I’m a passionate interface and experience designer from Brazil,
-          curious by nature and that is what I think makes me go boyond to
+          curious by nature and that is what I think makes me go beyond to
           achieve the most results in the products that I work on.
         </p>
       </div>
-      <div class="social pad-top-1x">
+      <div class="social">
         <a href="https://www.dribbble.com/alexandreschrammel"
           ><img class="" src="../assets/social/dribbble.svg"
         /></a>
@@ -22,7 +22,7 @@
           ><img class="" src="../assets/social/linkedin.svg"
         /></a>
       </div>
-      <div class="contact flex right">
+      <div class="right contact flex ">
         <p>
           <span class="title">Contact</span> <span>+ 55 61 98334-0396</span>
           <span>alexandre.schrammel@gmail.com</span>
@@ -58,6 +58,10 @@ export default {
     flex-direction: column;
     padding: 0 24px;
   }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    column-gap: 24px;
+    grid-template-rows: 2fr 1fr;
+  }
 }
 
 .profile {
@@ -81,6 +85,9 @@ export default {
       font-size: 8vw;
       padding: 24px 0 16px 0;
     }
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      font-size: 5vw;
+    }
   }
   p {
     max-width: 740px;
@@ -88,6 +95,13 @@ export default {
     font-size: 24px;
     font-weight: 300;
     line-height: 160%;
+
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      max-width: 520px;
+      font-size: 16px;
+      width: 440px;
+      padding-top: 16px;
+    }
     @media only screen and (max-width: $breakpoint-phone) {
       font-size: 4vw;
       max-width: 100vw;
@@ -132,6 +146,10 @@ export default {
     align-self: flex-start;
     margin-top: 5vh;
   }
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      justify-content: flex-start;
+    }
+
   p {
     line-height: 40px;
     font-family: "jost", sans-serif;
@@ -140,15 +158,26 @@ export default {
     @media only screen and (max-width: $breakpoint-phone) {
       text-align: left;
       align-self: flex-start;
+            font-size: 16px;
+      display: block;
     }
+        @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+     margin-bottom: 16px;
+    }
+
   }
   .title {
     font-weight: 500;
     font-size: 24px;
     padding-right: 32px;
-    display: block;
+    display: inline;
     @media only screen and (max-width: $breakpoint-phone) {
       padding-right: 0;
+    }
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      display: inline;
+      font-size: 20px;
+      padding-right: 16px;
     }
   }
   span {
@@ -161,6 +190,12 @@ export default {
       display: block;
       padding-right: 0x;
     }
+        @media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+    font-size: 16px;
+    padding-right: 16px;
+}
   }
 }
 </style>
