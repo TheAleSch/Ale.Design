@@ -22,12 +22,11 @@ export default {
 
 header {
   margin-bottom: 16px;
-  min-height: 60vh;
+  min-height: 64vh;
   color: white;
 
   padding: 0 15vw 8vh 80px;
   width: 100vw;
-  height: 60vh;
   background-color: #000;
 
   display: flex;
@@ -36,8 +35,12 @@ header {
   align-items: flex-start;
   @media only screen and (max-width: $breakpoint-phone) {
     padding: 0 24px 24px 24px;
-      
-	}
+  }
+  @media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+    padding: 0 24px 56px 32px;
+}
 }
 .huge {
   margin-left: -20px;
@@ -49,6 +52,11 @@ header {
     @media only screen and (max-width: $breakpoint-phone) {
       font-size: 60vw;
 	}
+@media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+    font-size: 250px;
+}
 }
 .big {
   font-size: 72px;
@@ -57,7 +65,12 @@ header {
   @media only screen and (max-width: $breakpoint-phone) {
       font-size: 8vw;
       
-	}
+  }
+  @media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+          font-size: 40px;
+}
 }
 
 .small {
@@ -67,7 +80,13 @@ header {
   line-height: 100%;
     @media only screen and (max-width: $breakpoint-phone) {
       font-size: 16px;
-      
+
 	}
+  @media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+          font-size: 18px;
+}
+
 }
 </style>

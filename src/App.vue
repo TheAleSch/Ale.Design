@@ -52,7 +52,14 @@ transform: translateY(-150px);
       @media only screen and (max-width: $breakpoint-phone) {
       padding: 16px;
       
-	}
+  }
+  
+@media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+      padding: 24px 0 16px 24px;
+}
+
   a {
   font-weight: 500;
   color: #fff;
@@ -73,6 +80,14 @@ transform: translateY(-150px);
       margin: 0 8px 8px 24px;
       
 	}
+
+@media only screen 
+  and (min-device-width: $breakpoint-tablet-portrait) 
+  and (max-device-width: $breakpoint-tablet-landscape){
+          font-size: 18px;
+      padding: 4px 0 4px 0;
+      margin: 0 8px 8px 24px;
+}
 
   &:hover {
       border-bottom: #545454 4px solid;
