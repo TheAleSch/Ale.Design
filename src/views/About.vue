@@ -37,32 +37,50 @@ export default {
   name: "pagheader",
 };
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-
 <style lang="scss" scoped>
+@import "@/scss/variables.scss";
+
 .header-content {
   margin-bottom: 80px;
   color: white;
   width: 100vw;
   background-color: #000;
+  column-gap: 80px;
 
   display: grid;
   grid-template-columns: 1fr 2fr;
-  column-gap: 80px;
   grid-template-rows: 2fr 1fr 1fr;
+
+  font-weight: 500;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 10vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
 }
 
 .profile {
   grid-row: 1/5;
   grid-column: 1/2;
+  @media only screen and (max-width: $breakpoint-phone) {
+    max-width: 60vw;
+  }
 }
 .bio {
   grid-row: 1/2;
   grid-column: 2/3;
   flex-direction: column;
   justify-content: flex-end;
+  @media only screen and (max-width: $breakpoint-phone) {
+    justify-content: flex-start;
+  }
   h2 {
     font-weight: 500;
+    @media only screen and (max-width: $breakpoint-phone) {
+      font-size: 8vw;
+      padding: 24px 0 16px 0;
+    }
   }
   p {
     max-width: 740px;
@@ -70,10 +88,16 @@ export default {
     font-size: 24px;
     font-weight: 300;
     line-height: 160%;
+    @media only screen and (max-width: $breakpoint-phone) {
+      font-size: 4vw;
+      max-width: 100vw;
+      text-align: left;
+      padding-top: 0;
+    }
   }
 }
 
-/* .bio {
+/* .bio auto size {
         grid-row: 1/2;
       grid-column: 2/3;
       flex-direction: column;
@@ -94,6 +118,9 @@ export default {
 .social {
   grid-row: 2/3;
   grid-column: 2/3;
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 8px 0;
+  }
   img {
     padding-right: 16px;
   }
@@ -101,21 +128,39 @@ export default {
 .contact {
   grid-row: 3/5;
   grid-column: 2/3;
+  @media only screen and (max-width: $breakpoint-phone) {
+    align-self: flex-start;
+    margin-top: 5vh;
+  }
   p {
     line-height: 40px;
     font-family: "jost", sans-serif;
     align-self: flex-end;
     margin-bottom: 32px;
+    @media only screen and (max-width: $breakpoint-phone) {
+      text-align: left;
+      align-self: flex-start;
+    }
   }
   .title {
     font-weight: 500;
     font-size: 24px;
     padding-right: 32px;
+    display: block;
+    @media only screen and (max-width: $breakpoint-phone) {
+      padding-right: 0;
+    }
   }
   span {
     font-weight: 200;
-    font-size: 18;
+    font-size: 18px;
     padding-right: 40px;
+    display: inline;
+    @media only screen and (max-width: $breakpoint-phone) {
+      font-size: 16px;
+      display: block;
+      padding-right: 0x;
+    }
   }
 }
 </style>
