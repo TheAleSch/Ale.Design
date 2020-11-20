@@ -1,6 +1,6 @@
 <template>
   <div class="project">
-<h1>Financial SuperApp</h1>
+<h1>Financial Super App</h1>
     <div class="father">
       <div class="grid-container">
         <div class="grid-item item-full pad-top-2x">

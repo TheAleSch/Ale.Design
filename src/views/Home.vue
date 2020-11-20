@@ -5,12 +5,21 @@
       <div class="title-huge"><h2>Work</h2></div>
       <div class="projects">
         <projectCard
-          picture="@/assets/works/financialapp.png"
+          picture="financialapp.png"
           projectRoute="/project"
-          title="Financial SuperApp"
-          desc="The solution we found was to connect all the services in one place, with one login, making it easier to manage the financial life of a company. In order to make this vision of a financial super app become a reality."
+          title="Finance Super App"
+          desc="A finance Super App designed to help the majority of the company to solve their financial problems in just one place."
           color="#233D6B"
         />
+        <projectCard
+          picture="financialapp.png"
+          external-link="https://dribbble.com/alexandreschrammel"
+          title="See more work at Dribble"
+          desc="You can see more of my work at my Dribbble"
+          color="#ea4c89"
+        />
+
+
       </div>
     </div>
     <footer>

@@ -15,14 +15,16 @@
         </p>
       </div>
       <div class="social">
-        <a href="https://www.dribbble.com/alexandreschrammel"
-          ><img class="" src="../assets/social/dribbble.svg"
+        <a href="https://www.dribbble.com/alexandreschrammel" target="_blank">
+        <img class="" src="../assets/social/dribbble.svg"
         /></a>
-        <a href="https://www.linkedin.com/in/alexandreschrammel/"
-          ><img class="" src="../assets/social/linkedin.svg"
+        <a
+          href="https://www.linkedin.com/in/alexandreschrammel/"
+          target="_blank">
+          <img class="" src="../assets/social/linkedin.svg"
         /></a>
       </div>
-      <div class="right contact flex ">
+      <div class="right contact flex">
         <p>
           <span class="title">Contact</span> <span>+ 55 61 98334-0396</span>
           <span>alexandre.schrammel@gmail.com</span>
@@ -146,9 +148,9 @@ export default {
     align-self: flex-start;
     margin-top: 5vh;
   }
-      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      justify-content: flex-start;
-    }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    justify-content: flex-start;
+  }
 
   p {
     line-height: 40px;
@@ -158,13 +160,12 @@ export default {
     @media only screen and (max-width: $breakpoint-phone) {
       text-align: left;
       align-self: flex-start;
-            font-size: 16px;
+      font-size: 16px;
       display: block;
     }
-        @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-     margin-bottom: 16px;
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      margin-bottom: 16px;
     }
-
   }
   .title {
     font-weight: 500;
@@ -190,12 +191,10 @@ export default {
       display: block;
       padding-right: 0x;
     }
-        @media only screen 
-  and (min-device-width: $breakpoint-tablet-portrait) 
-  and (max-device-width: $breakpoint-tablet-landscape){
-    font-size: 16px;
-    padding-right: 16px;
-}
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      font-size: 16px;
+      padding-right: 16px;
+    }
   }
 }
 </style>
