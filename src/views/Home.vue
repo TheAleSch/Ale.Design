@@ -2,16 +2,19 @@
   <div class="home">
     <pagheader />
     <div class="title-huge"><h2>Work</h2></div>
+    <projectCard  picture="" title="Finance SuperApp" desc="The solution we found was to connect all the services in one place, with one login, making it easier to manage the financial life of a company. In order to make this vision of a financial super app become a reality." color="#233D6B"/>
   </div>
 </template>
 
-<script>
+<script> 
 // @ is an alias to /src
 import pagheader from "@/components/pagheader.vue";
+import projectCard from "@/components/projectcard.vue";
 export default {
   name: "Home",
   components: {
     pagheader,
+    projectCard,
   },
 };
 </script>
