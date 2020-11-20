@@ -144,14 +144,16 @@ body {
 /* Text and Typography */ 
 h1 {
 font-family: Jost;
-font-size: 180px;
+font-size: 140px;
 font-style: normal;
 font-weight: 500;
 line-height: 144%;
-
-
+margin: 24px 40px;
 @media only screen and (max-width: $breakpoint-phone) {
-	font-size: 80px;
+	font-size: 60px;
+	font-weight: 700;
+	margin: 24px 0 0 24px;
+	text-transform: uppercase;
 	}
 
 }

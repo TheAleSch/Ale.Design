@@ -133,17 +133,3 @@
 .img-single {
 	max-width:100%;
 }
-/* Text and Typography */ 
-h1 {
-font-family: Jost;
-font-size: 180px;
-font-style: normal;
-font-weight: 500;
-line-height: 144%;
-
-
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 80px;
-	}
-
-}

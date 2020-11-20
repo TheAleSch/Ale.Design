@@ -1,9 +1,9 @@
 <template>
   <div class="project">
-<h1>Financial App</h1>
+<h1>Financial SuperApp</h1>
     <div class="father">
       <div class="grid-container">
-        <div class="grid-item item-full pad-top-5x">
+        <div class="grid-item item-full pad-top-2x">
           <h2>Introduction</h2>
         </div>
         <div class="grid-item item-full pad-top-2x">
