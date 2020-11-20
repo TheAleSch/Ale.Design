@@ -43,7 +43,7 @@ export default {
 @import "@/scss/variables.scss";
 
 .header-content {
-  margin-bottom: 80px;
+  margin-bottom: 180px;
   color: white;
   width: 100vw;
   background-color: #000;

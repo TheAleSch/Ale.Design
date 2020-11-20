@@ -107,6 +107,7 @@ footer {
           @media only screen and (max-width: $breakpoint-phone) {
 
 height: 112px;
+
     }
   p {
     color: white;
