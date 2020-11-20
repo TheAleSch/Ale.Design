@@ -1,12 +1,15 @@
 <template>
-<div class="app">
-  <div id="nav">
+  <div class="app">
+    <div id="nav">
       <router-link to="/">Home</router-link> |
-    <router-link to="/about">About me</router-link> |
-  </div>
+      <router-link to="/about">About me</router-link> |
+    </div>
     <transition name="fade" mode="out-in">
-    <router-view/>
-  </transition>
+      <router-view />
+    </transition>
+    <footer>
+      <p>Made with ❤ in São Paulo ~ Proudly coded by me using VueJS</p>
+    </footer>
   </div>
 </template>
 
@@ -88,5 +91,32 @@
       border-bottom: #fff 4px solid;
     }
   }
+}
+
+footer {
+  background-color: #000;
+  height: 80px;
+
+  grid-area: footer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px;
+          @media only screen and (max-width: $breakpoint-phone) {
+
+height: 112px;
+    }
+  p {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+        @media only screen and (max-width: $breakpoint-phone) {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
 }
 </style>

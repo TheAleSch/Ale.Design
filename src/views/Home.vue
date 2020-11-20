@@ -12,7 +12,7 @@
           color="#233D6B"
         />
         <projectCard
-          picture="financialapp.png"
+          picture="dribbblecover-nobg.png"
           external-link="https://dribbble.com/alexandreschrammel"
           title="See more work at Dribble"
           desc="You can see more of my work at my Dribbble"
@@ -22,9 +22,6 @@
 
       </div>
     </div>
-    <footer>
-      <p>Made with ❤ in São Paulo ~ Proudly coded by me ^^ using VueJS</p>
-    </footer>
   </div>
 </template>
 
@@ -76,19 +73,5 @@ export default {
 .projects {
   grid-area: projects;
 }
-footer {
-  background-color: #000;
-  height: 80px;
 
-  grid-area: footer;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-  }
-}
 </style>

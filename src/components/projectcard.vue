@@ -51,9 +51,8 @@ export default {
     externalLink: String,
   },
   computed: {
-
-    picturePath (){
-      return require(`../assets/works/${this.picture}`)
+    picturePath() {
+      return require(`../assets/works/${this.picture}`);
     },
     cssVars() {
       return {
@@ -85,7 +84,7 @@ export default {
     padding: 0;
     justify-content: flex-start;
     margin-top: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 152px;
   }
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
     max-width: 80vw;
@@ -115,23 +114,24 @@ export default {
 .thumb {
   align-self: center;
   margin-right: -200px;
+  img {
+          max-width: 600px;
+  @media only screen and (max-width: $breakpoint-phone) {
+    max-width: 70vw;
+  }
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      max-width: 50vw;
+      min-width: 240px;
+  }
+  }
   @media only screen and (max-width: $breakpoint-phone) {
     transform: none;
     order: 1;
     align-self: center;
     margin-top: -100px;
     margin-right: 0;
-    img {
-      max-width: 70vw;
-    }
   }
-  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-    img {
-      max-width: 50vw;
-      min-width: 240px;
-    }
   }
-}
 
 // Text
 h4 {
