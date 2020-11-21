@@ -1,5 +1,5 @@
 <template>
-    <div  v-on:click="expandmenu" v-bind:class="{ 'lightbox-active': isOpen }" class="lightbox-backdrop">
+    <div  v-on:click="openLightbox" v-bind:class="{ 'lightbox-active': isOpen }" class="lightbox-backdrop">
       <slot/>
           <!-- <button type="button" class="btn-close"  @click="show()" aria-label="Close modal" >
         x 
@@ -16,7 +16,7 @@ export default {
     }
   },
   methods:{
-   expandmenu(){
+   openLightbox(){
      this.isOpen = !this.isOpen;
    }
   }
