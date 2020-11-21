@@ -36,7 +36,7 @@ cursor: zoom-in;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(3, 11, 37, 0.8);
+  background-color: rgba(1, 9, 34, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,7 +72,7 @@ cursor: zoom-in;
   img, svg {
           border: 16px solid #fff;
           background-color: white;
-          border-radius: 8px;
+          border-radius: 2px;
   }
 }
 .lightbox-enter,

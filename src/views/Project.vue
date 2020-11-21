@@ -51,8 +51,8 @@
           <h2>Process</h2>
         </div>
         <div class="grid-item item-full flex center pad-top-3x">
-          <lightbox>
-            <svg
+          <lightbox class="">
+            <svg class="img-plus"
               viewBox="0 0 685 149"
               width="685"
               height="149"

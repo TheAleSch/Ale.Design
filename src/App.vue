@@ -97,6 +97,8 @@ footer {
   background-color: #000;
   height: 80px;
 
+  margin-top: 96px;
+
   grid-area: footer;
 
   display: flex;
@@ -105,7 +107,7 @@ footer {
 
   padding: 24px;
           @media only screen and (max-width: $breakpoint-phone) {
-
+margin-top: 56px;
 height: 112px;
 
     }

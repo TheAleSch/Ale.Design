@@ -155,7 +155,9 @@ margin: 24px 40px;
 	margin: 24px 0 0 24px;
 	text-transform: uppercase;
 	}
-
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+		font-size: 110px;
+	  }
 }
 
 h2 {
@@ -168,7 +170,7 @@ font-size: 80px;
 line-height: 100%;
 
 @media only screen and (max-width: $breakpoint-phone) {
-	font-size: 56px;
+	font-size: 40px;
 }
 
 }
