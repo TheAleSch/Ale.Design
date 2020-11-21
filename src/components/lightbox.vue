@@ -66,8 +66,7 @@ cursor: zoom-in;
 </style>
 <style lang="scss" >
 
-.lightbox-backdrop {
-}
+
 .lightbox-active {
   img, svg {
           border: 16px solid #fff;
