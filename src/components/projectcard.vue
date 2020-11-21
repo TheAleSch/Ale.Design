@@ -18,7 +18,7 @@
             fill="#fff"
           /></svg
       ></router-link>
-      <a :href="externalLink" v-if="externalLink && externalLink.length">
+      <a :href="externalLink" target="_blank" v-if="externalLink && externalLink.length">
         See more
         <svg
           width="32"

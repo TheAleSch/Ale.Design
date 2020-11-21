@@ -14,11 +14,11 @@
         <projectCard
           picture="dribbblecover-nobg.png"
           external-link="https://dribbble.com/alexandreschrammel"
-          title="See more work at Dribble"
+          title="See more work at Dribbble"
           desc="You can see more of my work at my Dribbble"
           color="#ea4c89"
         />
-
+<!-- <lightbox><img src="@/assets/works/dribbblecoveralternative.jpg"></lightbox> -->
 
       </div>
     </div>
@@ -29,6 +29,7 @@
 // @ is an alias to /src
 import pagheader from "@/components/pagheader.vue";
 import projectCard from "@/components/projectcard.vue";
+
 export default {
   name: "Home",
   components: {
