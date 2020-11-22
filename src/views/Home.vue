@@ -18,7 +18,6 @@
           desc="You can see more of my work at my Dribbble"
           color="#ea4c89"
         />
-<!-- <lightbox><img src="@/assets/works/dribbblecoveralternative.jpg"></lightbox> -->
 
       </div>
     </div>
@@ -63,10 +62,10 @@ export default {
     font-weight: 500;
     font-size: 240px;
     line-height: 140%;
-    margin-left: -32px;
+    margin-left: 80px;
     @media only screen and (max-width: $breakpoint-phone) {
       font-size: 80px;
-      margin-left: -8px;
+      margin-left: 24px;
     }
   }
 }
