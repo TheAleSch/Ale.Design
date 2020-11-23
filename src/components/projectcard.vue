@@ -18,7 +18,11 @@
             fill="#fff"
           /></svg
       ></router-link>
-      <a :href="externalLink" target="_blank" v-if="externalLink && externalLink.length">
+      <a
+        :href="externalLink"
+        target="_blank"
+        v-if="externalLink && externalLink.length"
+      >
         See more
         <svg
           width="32"
@@ -115,14 +119,14 @@ export default {
   align-self: center;
   margin-right: -200px;
   img {
-          max-width: 600px;
-  @media only screen and (max-width: $breakpoint-phone) {
-    max-width: 70vw;
-  }
+    max-width: 600px;
+    @media only screen and (max-width: $breakpoint-phone) {
+      max-width: 70vw;
+    }
     @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
       max-width: 50vw;
       min-width: 240px;
-  }
+    }
   }
   @media only screen and (max-width: $breakpoint-phone) {
     transform: none;
@@ -131,7 +135,7 @@ export default {
     margin-top: -100px;
     margin-right: 0;
   }
-  }
+}
 
 // Text
 h4 {
@@ -153,8 +157,23 @@ a {
   padding-top: 88px;
   display: flex;
   align-items: center;
+  &:hover > svg {
+    animation: move 0.6s infinite alternate;
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    @keyframes move {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(8px);
+      }
+    }
+  }
+
   svg {
-    margin-left: 16px;
+    margin-left: 8px;
+    transition: all 0.2s ease-in-out;
   }
   @media only screen and (max-width: $breakpoint-phone) {
     padding-top: 48px;

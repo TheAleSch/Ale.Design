@@ -16,11 +16,12 @@
       </div>
       <div class="social">
         <a href="https://www.dribbble.com/alexandreschrammel" target="_blank">
-        <img class="" src="../assets/social/dribbble.svg"
+          <img class="" src="../assets/social/dribbble.svg"
         /></a>
         <a
           href="https://www.linkedin.com/in/alexandreschrammel/"
-          target="_blank">
+          target="_blank"
+        >
           <img class="" src="../assets/social/linkedin.svg"
         /></a>
       </div>
@@ -31,19 +32,36 @@
         </p>
       </div>
     </div>
+    <div class="grid-container">
+      <div class="hist">
+        <h2>Career</h2>
+        <workHistory />
+      </div>
+      <div class="feat">
+        <h2>Features</h2>
+        <featureList />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import workHistory from "@/components/workhistory.vue";
+import featureList from "@/components/features.vue";
+
 export default {
-  name: "pagheader",
+  name: "About",
+  components: {
+    workHistory,
+    featureList,
+  },
 };
 </script>
 <style lang="scss" scoped>
 @import "@/scss/variables.scss";
 
 .header-content {
-  margin-bottom: 180px;
+  margin-bottom: 72px;
   color: white;
   width: 100vw;
   background-color: #000;
@@ -54,66 +72,67 @@ export default {
   grid-template-rows: 2fr 1fr 1fr;
 
   font-weight: 500;
+
   @media only screen and (max-width: $breakpoint-phone) {
     font-size: 10vw;
     display: flex;
     flex-direction: column;
     padding: 0 24px;
+    margin-bottom: 32px;
   }
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
     column-gap: 24px;
     grid-template-rows: 2fr 1fr;
+    margin-bottom: 56px;
   }
-}
-
-.profile {
-  grid-row: 1/5;
-  grid-column: 1/2;
-  @media only screen and (max-width: $breakpoint-phone) {
-    max-width: 60vw;
-  }
-}
-.bio {
-  grid-row: 1/2;
-  grid-column: 2/3;
-  flex-direction: column;
-  justify-content: flex-end;
-  @media only screen and (max-width: $breakpoint-phone) {
-    justify-content: flex-start;
-  }
-  h2 {
-    font-weight: 500;
+  .profile {
+    grid-row: 1/5;
+    grid-column: 1/2;
     @media only screen and (max-width: $breakpoint-phone) {
-      font-size: 8vw;
-      padding: 24px 0 16px 0;
-    }
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      font-size: 5vw;
+      max-width: 60vw;
     }
   }
-  p {
-    max-width: 740px;
-    font-family: "Jost", sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 160%;
-
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      max-width: 520px;
-      font-size: 16px;
-      width: 440px;
-      padding-top: 16px;
-    }
+  .bio {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: flex-end;
     @media only screen and (max-width: $breakpoint-phone) {
-      font-size: 4vw;
-      max-width: 100vw;
-      text-align: left;
-      padding-top: 0;
+      justify-content: flex-start;
+    }
+    h2 {
+      font-weight: 500;
+      @media only screen and (max-width: $breakpoint-phone) {
+        font-size: 8vw;
+        padding: 24px 0 16px 0;
+      }
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+        font-size: 5vw;
+      }
+    }
+    p {
+      max-width: 740px;
+      font-family: "Jost", sans-serif;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 160%;
+
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+        max-width: 520px;
+        font-size: 16px;
+        width: 440px;
+        padding-top: 16px;
+      }
+      @media only screen and (max-width: $breakpoint-phone) {
+        font-size: 4vw;
+        max-width: 100vw;
+        text-align: left;
+        padding-top: 0;
+      }
     }
   }
-}
 
-/* .bio auto size {
+  /* .bio auto size {
         grid-row: 1/2;
       grid-column: 2/3;
       flex-direction: column;
@@ -131,70 +150,121 @@ export default {
         line-height: 160%;
       }
 } */
-.social {
-  grid-row: 2/3;
-  grid-column: 2/3;
-  @media only screen and (max-width: $breakpoint-phone) {
-    padding: 8px 0;
+  .social {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    @media only screen and (max-width: $breakpoint-phone) {
+      padding: 8px 0;
+    }
+    img {
+      transition: all 0.2s ease-in-out;
+      padding-right: 16px;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
-  img {
-    padding-right: 16px;
+  .contact {
+    grid-row: 3/5;
+    grid-column: 2/3;
+    @media only screen and (max-width: $breakpoint-phone) {
+      align-self: flex-start;
+      margin-top: 5vh;
+    }
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      justify-content: flex-start;
+    }
+
+    p {
+      line-height: 40px;
+      font-family: "jost", sans-serif;
+      align-self: flex-end;
+      margin-bottom: 32px;
+      @media only screen and (max-width: $breakpoint-phone) {
+        text-align: left;
+        align-self: flex-start;
+        font-size: 16px;
+        display: block;
+      }
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+        margin-bottom: 16px;
+      }
+    }
+    .title {
+      font-weight: 500;
+      font-size: 24px;
+      padding-right: 32px;
+      display: inline;
+      @media only screen and (max-width: $breakpoint-phone) {
+        padding-right: 0;
+      }
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+        display: inline;
+        font-size: 20px;
+        padding-right: 16px;
+      }
+    }
+    span {
+      font-weight: 200;
+      font-size: 18px;
+      padding-right: 40px;
+      display: inline;
+      @media only screen and (max-width: $breakpoint-phone) {
+        font-size: 16px;
+        display: block;
+        padding-right: 0x;
+      }
+      @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+        font-size: 16px;
+        padding-right: 16px;
+      }
+    }
   }
 }
-.contact {
-  grid-row: 3/5;
-  grid-column: 2/3;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 80px;
+
+  grid-template-areas: "hist hist hist feat feat";
+  width: 90vw;
+  max-width: 1320px;
+  margin: 0 auto;
   @media only screen and (max-width: $breakpoint-phone) {
-    align-self: flex-start;
-    margin-top: 5vh;
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      "feat"
+      "hist";
+    margin: 0 24px;
   }
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-    justify-content: flex-start;
+    width: calc(100vw - 48px);
+    column-gap: 56px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "hist hist hist hist feat feat feat";
+  }
+  h2 {
+    font-weight: 600;
+    margin-bottom: 48px;
+    @media only screen and (max-width: $breakpoint-phone) {
+      margin-bottom: 32px;
+    }
   }
 
-  p {
-    line-height: 40px;
-    font-family: "jost", sans-serif;
-    align-self: flex-end;
-    margin-bottom: 32px;
-    @media only screen and (max-width: $breakpoint-phone) {
-      text-align: left;
-      align-self: flex-start;
-      font-size: 16px;
-      display: block;
-    }
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      margin-bottom: 16px;
-    }
+  .hist {
+    grid-area: hist;
   }
-  .title {
-    font-weight: 500;
-    font-size: 24px;
-    padding-right: 32px;
-    display: inline;
-    @media only screen and (max-width: $breakpoint-phone) {
-      padding-right: 0;
-    }
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      display: inline;
-      font-size: 20px;
-      padding-right: 16px;
-    }
-  }
-  span {
-    font-weight: 200;
-    font-size: 18px;
-    padding-right: 40px;
-    display: inline;
-    @media only screen and (max-width: $breakpoint-phone) {
-      font-size: 16px;
-      display: block;
-      padding-right: 0x;
-    }
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-      font-size: 16px;
-      padding-right: 16px;
-    }
+  .feat {
+    grid-area: feat;
   }
 }
+@media only screen and (max-width: $breakpoint-phone) {
+}
+@media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+}
 </style>
+
+

@@ -55,7 +55,11 @@ header {
     padding: 24px 0 0 0;
   }
   img {
+    transition: all 0.2s ease-in-out;
     padding-right: 16px;
+    &:hover {
+      transform: scale(1.1);
+    }
     &:last-child {
       padding-right: 8px;
     }

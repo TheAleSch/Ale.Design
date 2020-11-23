@@ -11,6 +11,7 @@
           desc="A finance Super App designed to help the majority of the company to solve their financial problems in just one place."
           color="#233D6B"
         />
+
         <projectCard
           picture="dribbblecover-nobg.png"
           external-link="https://dribbble.com/alexandreschrammel"
