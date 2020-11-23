@@ -37,6 +37,7 @@ export default {
           endYear: "20",
           description:
             "At this position I worked in projects for some industrias such as retail and fintechs with big and multinational costumers such as Telefônica ( Vivo), Energisa, DPSP and others\n \
+\n \
 My responsibilities as a speacialist included:\n \
 - Leading projects to increase it's delivery quality.\n \
 - Sharing knowledge and mentoring the design team members.\n \
@@ -53,7 +54,7 @@ My responsibilities as a speacialist included:\n \
           endMonth: "Apr",
           endYear: "20",
           description:
-            "Minha principal área de atuação foi no time de Growth onde tinha a missão era de criar experimentos rápidos, integrar toda a equipe do nosso squad expandido através de facilitações, com foco em melhorar as nossas métricas.",
+            "My main area of expertise was in the Growth team where I had the mission to create quick experiments, integrate the entire team of our expanded squad through facilitations, with a focus on improving our metrics.",
         },
         {
           id: 3,
@@ -64,7 +65,7 @@ My responsibilities as a speacialist included:\n \
           endMonth: "Nov",
           endYear: "19",
           description:
-            "We create memorable experiences for the users of the products we develop.\n\
+            "As a product designer my main objective quas to create memorable experiences for the users of the products I develop.\n\
 Worked in the Banking and Acquirer industries developing B2B and B2C solutions.",
         },
         {

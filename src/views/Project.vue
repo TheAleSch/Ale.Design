@@ -52,7 +52,8 @@
         </div>
         <div class="grid-item item-full flex center pad-top-3x">
           <lightbox class="">
-            <svg class="img-plus"
+            <svg
+              class="img-plus"
               viewBox="0 0 685 149"
               width="685"
               height="149"
@@ -481,9 +482,9 @@
 
         <div class="grid-item item-3 pad-top-5x pad-top-1x-mobile">
           <p>
-            Wireframing was very important to rapid prototype to validate
-            stakeholder's ideas, some sketches were made trough workshops and
-            others were digital wireframes only to consolidate ideas.
+            Wireframes were very important to rapid prototype and validate
+            stakeholders ideas, some sketches were made through workshops,
+            others were only digital wireframes to consolidate ideas.
           </p>
         </div>
         <div class="grid-item item-3 pad-top-2x flex space-between">
@@ -501,8 +502,8 @@
             company. In order to make this vision of a financial super app
             become a reality - where others could connect their API and create
             an interface inside this app for their services, we prepared a good
-            foundation and started with two products Internet Banking and BS2
-            Pay.
+            foundation and started with two products Internet Banking and
+            BS2Pay.
           </p>
         </div>
 
@@ -576,161 +577,147 @@
           </div>
         </div>
 
-          <div class="grid-item item-2 pad-top-5x">
-            <h4>Modular onboarding</h4>
-          </div>
-
-          <div class="grid-item item-3 pad-top-5x pad-top-1x-mobile">
-            <p>
-              With so many apps and products coming we designed a solution that
-              made it easy for the user to start using new products, so we came
-              up with a modular onboarding system.
-            </p>
-          </div>
-          <div class="grid-item item-full pad-top-2x flex space-between">
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard1.png"
-            /></lightbox>
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard2.png"
-            /></lightbox>
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard3.png"
-            /></lightbox>
-          </div>
-          <div class="grid-item item-full pad-top-2x flex space-between">
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard4.png"
-            /></lightbox>
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard5.png"
-            /></lightbox>
-            <lightbox class="h-fit"
-              ><img class="img-plus" src="../assets/financialapp/onboard6.png"
-            /></lightbox>
-          </div>
-          <div class="grid-item item-full pad-top-5x">
-            <h2>Styleguide</h2>
-          </div>
-          <div class="grid-item item-full pad-top-2x">
-            <p>
-              The need for scalability and speed made it that we needed to start
-              creating a strong base for a future design system. To achieve
-              that, we decided to use the Atomic design as a method to create
-              the components and establish our initial styleguide.
-            </p>
-          </div>
-          <div class="grid-item item-2 pad-top-3x">
-            <h4>Tokens</h4>
-          </div>
-          <div class="grid-item item-3 pad-top-3x flex space-between">
-            <lightbox class="h-fit"
-              ><img class="img-single" src="../assets/financialapp/tokens.png"
-            /></lightbox>
-          </div>
-          <div class="grid-item item-2 pad-top-3x">
-            <h4>Grid</h4>
-          </div>
-          <div class="grid-item item-3 pad-top-3x flex space-between">
-            <lightbox class="h-fit"
-              ><img class="img-single" src="../assets/financialapp/grid.png"
-            /></lightbox>
-          </div>
-          <div class="grid-item item-2 pad-top-3x">
-            <h4>Components</h4>
-          </div>
-          <div class="grid-item item-3 pad-top-3x flex space-between">
-            <lightbox class="h-fit"
-              ><img
-                class="img-single"
-                src="../assets/financialapp/components.png"
-            /></lightbox>
-          </div>
-
-          <!---- DEVELOPMENT ----->
-
-          <div class="grid-item item-full pad-top-5x">
-            <h2>Devlopment</h2>
-          </div>
-          <div class="grid-item item-full pad-top-2x">
-            <p>
-              The handoff to the development team was made trough Zeplin, but
-              since they had already coded all the components for the styleguide
-              the effort for it was greatly reduced, giving the development the
-              speed necessary.
-            </p>
-            <br />
-            <p>
-              After every flow coded I as the designer went to validate if the
-              design was right.
-            </p>
-          </div>
-          <div class="grid-item item-2 pad-top-3x">
-            <h4>Handoff & Design QA</h4>
-          </div>
-          <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
-            <p>
-              The handoff to the development team was made trough Zeplin, but
-              since they had already coded all the components for the styleguide
-              the effort for it was greatly reduced, giving the development the
-              speed necessary.
-            </p>
-            <br />
-            <p>
-              After every flow coded I as the designer went to validate if the
-              design was right.
-            </p>
-          </div>
-
-          <!---- Metrics ----->
-
-          <div class="grid-item item-full pad-top-5x">
-            <h2>Metrics</h2>
-          </div>
-          <div class="grid-item item-2 pad-top-3x">
-            <h5>Indicators used to measure the product sucess</h5>
-          </div>
-          <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
-            <ul>
-              <li>Account opening rate</li>
-              <li>How and which features the user was using daily.</li>
-              <li>The goals directly aligned with the business unit OKRs.</li>
-              <li>
-                The motivation to open an account or stop during the process of
-                it and if it was aligned without value proposition.
-              </li>
-            </ul>
-          </div>
-
-          <!---- Conclusion ----->
-
-          <div class="grid-item item-full pad-top-5x">
-            <h2>Conclusion</h2>
-          </div>
-
-          <div class="grid-item item-2 pad-top-3x">
-            <h4>Takeaways</h4>
-          </div>
-          <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
-            <p>
-              This project could have been better executed if we had the chance
-              to understand better the scope of the project. This way the sales
-              team could ask for a better time frame to deliver.
-            </p>
-            <p>
-              For the next project, we started to map first what we have to do,
-              the initial scope before accepting the deadline. Another lesson
-              learned is that even a product is a commodity there is a lot of
-              room for improvement, and I should have made benchmarking in
-              different markets.
-            </p>
-          </div>
-
-          <!--- grid container ---->
+        <div class="grid-item item-2 pad-top-5x">
+          <h4>Modular onboarding</h4>
         </div>
+
+        <div class="grid-item item-3 pad-top-5x pad-top-1x-mobile">
+          <p>
+            With so many apps and products coming we designed a solution that
+            made it easy for the user to start using new products, so we came up
+            with a modular onboarding system.
+          </p>
+        </div>
+        <div class="grid-item item-full pad-top-2x flex space-between">
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard1.png"
+          /></lightbox>
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard2.png"
+          /></lightbox>
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard3.png"
+          /></lightbox>
+        </div>
+        <div class="grid-item item-full pad-top-2x flex space-between">
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard4.png"
+          /></lightbox>
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard5.png"
+          /></lightbox>
+          <lightbox class="h-fit"
+            ><img class="img-plus" src="../assets/financialapp/onboard6.png"
+          /></lightbox>
+        </div>
+        <div class="grid-item item-full pad-top-5x">
+          <h2>Styleguide</h2>
+        </div>
+        <div class="grid-item item-full pad-top-2x">
+          <p>
+            The need for scalability and speed made it that we needed to start
+            creating a strong base for a future design system. To achieve that,
+            we decided to use the Atomic design as a method to create the
+            components and establish our initial styleguide.
+          </p>
+        </div>
+        <div class="grid-item item-2 pad-top-3x">
+          <h4>Tokens</h4>
+        </div>
+        <div class="grid-item item-3 pad-top-3x flex space-between">
+          <lightbox class="h-fit"
+            ><img class="img-single" src="../assets/financialapp/tokens.png"
+          /></lightbox>
+        </div>
+        <div class="grid-item item-2 pad-top-3x">
+          <h4>Grid</h4>
+        </div>
+        <div class="grid-item item-3 pad-top-3x flex space-between">
+          <lightbox class="h-fit"
+            ><img class="img-single" src="../assets/financialapp/grid.png"
+          /></lightbox>
+        </div>
+        <div class="grid-item item-2 pad-top-3x">
+          <h4>Components</h4>
+        </div>
+        <div class="grid-item item-3 pad-top-3x flex space-between">
+          <lightbox class="h-fit"
+            ><img
+              class="img-single"
+              src="../assets/financialapp/components.png"
+          /></lightbox>
+        </div>
+
+        <!---- DEVELOPMENT ----->
+
+        <div class="grid-item item-full pad-top-5x">
+          <h2>Devlopment</h2>
+        </div>
+        <div class="grid-item item-2 pad-top-3x">
+          <h4>Handoff & Design QA</h4>
+        </div>
+        <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
+          <p>
+            The handoff to the development team was made trough Zeplin, but
+            since they had already coded all the components for the styleguide
+            the effort for it was greatly reduced, giving the development the
+            speed necessary.
+          </p>
+          <br />
+          <p>
+            After every flow coded I as the designer went to validate if the
+            design was right.
+          </p>
+        </div>
+
+        <!---- Metrics ----->
+
+        <div class="grid-item item-full pad-top-5x">
+          <h2>Metrics</h2>
+        </div>
+        <div class="grid-item item-2 pad-top-3x">
+          <h5>Indicators used to measure the product success</h5>
+        </div>
+        <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
+          <ul>
+            <li>Account opening rate</li>
+            <li>How and which features the user was using daily.</li>
+            <li>The goals directly aligned with the business unit OKRs.</li>
+            <li>
+              The motivation to open an account or stop during the process of it
+              and if it was aligned without value proposition.
+            </li>
+          </ul>
+        </div>
+
+        <!---- Conclusion ----->
+
+        <div class="grid-item item-full pad-top-5x">
+          <h2>Conclusion</h2>
+        </div>
+
+        <div class="grid-item item-2 pad-top-3x">
+          <h4>Takeaways</h4>
+        </div>
+        <div class="grid-item item-3 pad-top-3x pad-top-1x-mobile">
+          <p>
+            This project could have been better executed if we had the chance to
+            understand better the scope of the project. This way the sales team
+            could ask for a better time frame to deliver.
+          </p>
+          <p>
+            For the next project, we started to map first what we have to do,
+            the initial scope before accepting the deadline. Another lesson
+            learned is that even a product is a commodity there is a lot of room
+            for improvement, and I should have made benchmarking in different
+            markets.
+          </p>
+        </div>
+
+        <!--- grid container ---->
       </div>
     </div>
-
+  </div>
 </template>
 
 <script>
