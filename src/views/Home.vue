@@ -19,7 +19,6 @@
           desc="You can see more of my work at my Dribbble"
           color="#ea4c89"
         />
-
       </div>
     </div>
   </div>
@@ -68,11 +67,14 @@ export default {
       font-size: 80px;
       margin-left: 24px;
     }
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      font-size: 160px;
+      margin-left: 40px;
+    }
   }
 }
 
 .projects {
   grid-area: projects;
 }
-
 </style>

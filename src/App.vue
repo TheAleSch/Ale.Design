@@ -47,9 +47,12 @@
 }
 
 #nav {
-  padding: 30px;
-  background-color: #000;
+  position: sticky;
+  padding: 16px;
+  background-color: rgba(000, 000, 000, 1);
+
   display: flex;
+  top: 0;
   @media only screen and (max-width: $breakpoint-phone) {
     padding: 16px;
   }
@@ -69,9 +72,9 @@
     text-transform: uppercase;
     border: 0px;
     padding: 8px 0 8px 0;
-    margin: 32px 24px 16px 48px;
+    margin: 24px 16px 8px 48px;
     transition: all 0.2s ease-in-out;
-    border-bottom: rgba($color: #000000, $alpha: 0) 4px solid;
+    border-bottom: rgba($color: #000000, $alpha: 1) 4px solid;
     transition: all 0.2s ease-in-out;
 
     @media only screen and (max-width: $breakpoint-phone) {

@@ -92,9 +92,16 @@ export default {
     margin-bottom: 152px;
   }
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-    max-width: 80vw;
+    max-width: 75vw;
     margin-left: 0;
+    padding-left: 24px;
     justify-content: flex-start;
+    margin-bottom: 120px;
+  }
+  img {
+    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+      max-width: 48vw;
+    }
   }
 }
 
