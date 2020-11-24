@@ -100,8 +100,6 @@ footer {
   background-color: #000;
   height: 80px;
 
-  
-
   grid-area: footer;
 
   display: flex;
@@ -109,19 +107,17 @@ footer {
   align-items: center;
 
   padding: 24px;
-          @media only screen and (max-width: $breakpoint-phone) {
-height: 112px;
-
-    }
+  @media only screen and (max-width: $breakpoint-phone) {
+    height: 112px;
+  }
   p {
     color: white;
     font-weight: 600;
     font-size: 16px;
-        @media only screen and (max-width: $breakpoint-phone) {
+    @media only screen and (max-width: $breakpoint-phone) {
       font-size: 14px;
       text-align: center;
     }
   }
-
 }
 </style>

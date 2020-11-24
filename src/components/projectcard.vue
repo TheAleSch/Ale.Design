@@ -81,6 +81,7 @@ export default {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 200px;
+
   @media only screen and (max-width: $breakpoint-phone) {
     max-width: 100vw;
     margin: 24px;
@@ -138,6 +139,14 @@ export default {
 }
 
 // Text
+h4::selection,
+p::selection,
+a::selection,
+h5::selection {
+  background: var(--bgcolor);
+  color: white;
+}
+
 h4 {
   justify-self: flex-start;
   font-weight: 400;

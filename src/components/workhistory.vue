@@ -7,6 +7,7 @@
           ><span class="bold">{{ item.startMonth }}</span
           >{{ item.startYear }}</span
         >
+        ⁄
         <span
           ><span class="bold">{{ item.endMonth }}</span
           >{{ item.endYear }}</span
@@ -72,7 +73,7 @@ Worked in the Banking and Acquirer industries developing B2B and B2C solutions."
           id: 4,
           company: "Bossabox Prolancer - Freelance",
           title: "Lead Product Designer",
-          startMonth: "Cct",
+          startMonth: "Oct",
           startYear: "18",
           endMonth: "Nov",
           endYear: "19",

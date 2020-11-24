@@ -19,7 +19,7 @@ export default {
         {
           id: 1,
           title:
-            "Talk at Builders Talks: Product Design Process: How to create great products!",
+            "Talk: Product Design Process: How to create great products!",
           year: "2020",
           language: "Portuguese",
           externalLink: "https://youtu.be/d_I-0LPYZ1g",

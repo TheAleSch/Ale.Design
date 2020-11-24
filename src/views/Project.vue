@@ -1,6 +1,8 @@
 <template>
   <div class="project">
-    <h1>Finance Super App</h1>
+    <div class="bfb-projects">
+      <h1>Finance Super App</h1>
+    </div>
     <div class="father">
       <div class="grid-container">
         <div class="grid-item item-full pad-top-2x">
@@ -568,13 +570,13 @@
                 src="../assets/financialapp/side-menu-drawer3.png"
             /></lightbox>
           </div>
-          <div class="grid-item item-full pad-top-2x flex space-between">
-            <lightbox class="h-fit"
-              ><img
-                class="img-single"
-                src="../assets/financialapp/side-menu-drawer4.png"
-            /></lightbox>
-          </div>
+        </div>
+        <div class="grid-item item-full pad-top-2x flex space-between">
+          <lightbox class="h-fit"
+            ><img
+              class="img-single"
+              src="../assets/financialapp/side-menu-drawer4.png"
+          /></lightbox>
         </div>
 
         <div class="grid-item item-2 pad-top-5x">
@@ -642,9 +644,7 @@
         </div>
         <div class="grid-item item-3 pad-top-3x flex space-between">
           <lightbox class="h-fit"
-            ><img
-              class="img-single"
-              src="../assets/financialapp/components.png"
+            ><img class="img-single" src="../assets/financialapp/components.png"
           /></lightbox>
         </div>
 
@@ -717,6 +717,7 @@
         <!--- grid container ---->
       </div>
     </div>
+    <br /><br /><br /><br /><br />
   </div>
 </template>
 
