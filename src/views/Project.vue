@@ -1,7 +1,9 @@
 <template>
   <div class="project">
-    <div class="bfb-projects">
-      <h1>Finance Super App</h1>
+    <div class="bfb_projects">
+      <div class="content">
+        <h1>Finance Super App</h1>
+      </div>
     </div>
     <div class="father">
       <div class="grid-container">

@@ -2,6 +2,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 @import "./_variables.scss";
 
+.bfb_projects {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+		background-color: blue;
+	height: 70vh;
+	width: 100vw;
+	background-image: url("./assets/financialapp/cover.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	@media only screen and (max-width: $breakpoint-phone) {
+		height: 60vh;
+		}
+		@media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+			height: 80vh;
+		}
+
+	.content {
+	max-width: 1400px;
+	height: 100%;
+	width: 100%;
+	padding: 72px 24px;
+	display: flex;
+	align-items: flex-end;
+
+	h1{
+		margin: 0;
+		color: white;
+	}
+}
+}
+.father {
+	max-width: 1008px;
+	margin: 0 auto;
+	padding: 24px ;
+	}
+	
 
 .hide-mobile {
 	

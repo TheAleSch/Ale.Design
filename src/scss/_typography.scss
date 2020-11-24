@@ -10,18 +10,6 @@ body {
 	background-color: #FFF;
 }
 
-.father {
-	max-width: 1008px;
-	margin: 0 auto;
-	padding: 24px ;
-}
-
-.hide-mobile {
-	
-	@media only screen and (max-width: $breakpoint-phone) {
-		display: none;
-		}
-}
 /* Flex */ 
 
 .flex {
@@ -150,13 +138,13 @@ font-weight: 500;
 line-height: 144%;
 margin: 24px 40px;
 @media only screen and (max-width: $breakpoint-phone) {
-	font-size: 60px;
+	font-size: 48px;
 	font-weight: 700;
 	margin: 24px 0 0 24px;
 	text-transform: uppercase;
 	}
     @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-		font-size: 110px;
+		font-size: 96px;
 	  }
 }
 
