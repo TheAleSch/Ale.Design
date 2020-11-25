@@ -1,276 +1,273 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 @import "./_variables.scss";
 
-
 .placeholder {
-	background-color: #f6f6f6;	
+  background-color: #f6f6f6;
 }
 body {
-	background-color: #FFF;
+  background-color: #fff;
 }
 
-/* Flex */ 
+/* Flex */
 
 .flex {
-	display: flex;
+  display: flex;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		flex-wrap: wrap;
-		img {
-			max-width: initial;
-			width: 100%;
-		}
-}
+  @media only screen and (max-width: $breakpoint-phone) {
+    flex-wrap: wrap;
+    img {
+      max-width: initial;
+      width: 100%;
+    }
+  }
 }
 
 .h-fit {
-	flex: 1 1 auto;	
+  flex: 1 1 auto;
 }
 
 .center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .left {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 .right {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .space-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
-/* Padding */ 
+/* Padding */
 .pad-top-1x {
-	padding: 24px 0 0 0;
+  padding: 24px 0 0 0;
 }
 
 .pad-top-2x {
-	padding: 40px 0 0 0;
+  padding: 40px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 32px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 32px 0 0 0;
+  }
 }
 .pad-top-3x {
-	padding: 64px 0 0 0;
+  padding: 64px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 48px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 48px 0 0 0;
+  }
 }
 .pad-top-4x {
-	padding: 96px 0 0 0;
+  padding: 96px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 64px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 64px 0 0 0;
+  }
 }
 .pad-top-5x {
-	padding: 112px 0 0 0;
+  padding: 112px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 56px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 56px 0 0 0;
+  }
 }
 
 .pad-top-1x-mobile {
-	// padding: 24px 0 0 0;
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 16px 0 0 0;	
-	}
+  // padding: 24px 0 0 0;
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 16px 0 0 0;
+  }
 }
-/* Grid */ 
+/* Grid */
 
 .grid-container {
   display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-column-gap: 48px;
-	grid-row-gap: 0;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-template-columns: 1fr;
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-template-columns: 1fr;
+  }
 }
 .grid-item {
-	@media only screen and (max-width: $breakpoint-phone) {
-		max-width: calc(100vw - 48px);
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    max-width: calc(100vw - 48px);
+  }
 }
 
 .item-full {
-	grid-column: 1/5;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
-	}
+  grid-column: 1/5;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
+}
 
 .item-2 {
-	grid-column: 1/2;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
-	}
+  grid-column: 1/2;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
+}
 .item-3 {
-	grid-column: 2/5;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
+  grid-column: 2/5;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
 }
 
-
-/* img */ 
+/* img */
 .img-plus {
-	max-width:90%;
+  max-width: 90%;
 }
 .img-single {
-	max-width:100%;
+  max-width: 100%;
 }
-/* Text and Typography */ 
+/* Text and Typography */
 h1 {
-font-family: Jost;
-font-size: 140px;
-font-style: normal;
-font-weight: 500;
-line-height: 144%;
-margin: 24px 40px;
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 48px;
-	font-weight: 700;
-	margin: 24px 0 0 24px;
-	text-transform: uppercase;
-	}
-    @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-		font-size: 96px;
-	  }
+  font-family: Jost;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 144%;
+  margin: 24px 40px;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 24px 0 0 24px;
+    text-transform: uppercase;
+  }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    font-size: 96px;
+  }
 }
 
 h2 {
-margin: 0px;
-padding-top:32px;
-font-family: Jost;
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-line-height: 100%;
+  margin: 0px;
+  padding-top: 32px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 100%;
 
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 40px;
-}
-@media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 40px;
+  }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
     font-size: 64px;
   }
-
 }
 h4 {
-text-align: left;
-margin: 0px;
-font-family: Jost;
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 145%;
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 32px;
-	}
+  text-align: left;
+  margin: 0px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 145%;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 32px;
+  }
 }
 
 h5 {
-text-align: left;
-margin: 0px;
-font-family: Jost;
-font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 134%;
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 26px;
-	}
+  text-align: left;
+  margin: 0px;
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 134%;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 26px;
+  }
 }
 
 ul {
-	margin: 0;
-	list-style-type: square;
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding-left: 24px;
-		}
+  margin: 0;
+  list-style-type: square;
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding-left: 24px;
+  }
 }
 
 li {
-font-family: Open Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 240%;
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 15px;
-	font-weight: 600;
-	}
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 240%;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }
 
 p {
-margin: 0px;
-font-family: Open Sans;
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 170%;
+  margin: 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
 
-@media only screen and (max-width: $breakpoint-phone) {
-	font-size: 15px;
-	text-align: justify;
-	text-justify: inter-word;
+  @media only screen and (max-width: $breakpoint-phone) {
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    font-size: 16px;
+  }
 }
-
-}
-
-
 
 .nav {
-	display: flex;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);  
-  }
-  .link {
-	display: flex;
-	width: 75px;
-	height: 75px;
-	margin: 0 5px;
-	justify-content: center;
-	align-items: center;
-  }
-  .settings-icon {
-	display: block;
-	width: 40px;
-	height: 40px;
-  }
-  .settings-icon__line {
-	stroke: var(--color-text);
-	stroke-width: 5px;
-	transition: all 0.2s ease 0.05s;
-  }
-  .settings-icon__rect {
-	stroke: var(--color-text);
-	fill: var(--color-bg);
-	stroke-width: 5px;
-	transition: all 0.2s ease 0.05s;
-  }
-  .link:hover .settings-icon__line,
-  .link:hover .settings-icon__rect {
-	stroke: var(--color-link);
-	transition: all 0.2s ease 0.05s;
-  }
-  .link:hover .settings-icon__group--1 .settings-icon__rect {
-	transform: translateY(20px);
-  }
-  .link:hover .settings-icon__group--2 .settings-icon__rect {
-	transform: translateY(-20px);
-  }
-  .link:hover .settings-icon__group--3 .settings-icon__rect {
-	transform: translateY(25px);
-  } 
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.link {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+.settings-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.settings-icon__line {
+  stroke: var(--color-text);
+  stroke-width: 5px;
+  transition: all 0.2s ease 0.05s;
+}
+.settings-icon__rect {
+  stroke: var(--color-text);
+  fill: var(--color-bg);
+  stroke-width: 5px;
+  transition: all 0.2s ease 0.05s;
+}
+.link:hover .settings-icon__line,
+.link:hover .settings-icon__rect {
+  stroke: var(--color-link);
+  transition: all 0.2s ease 0.05s;
+}
+.link:hover .settings-icon__group--1 .settings-icon__rect {
+  transform: translateY(20px);
+}
+.link:hover .settings-icon__group--2 .settings-icon__rect {
+  transform: translateY(-20px);
+}
+.link:hover .settings-icon__group--3 .settings-icon__rect {
+  transform: translateY(25px);
+}

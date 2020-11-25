@@ -82,7 +82,9 @@ export default {
   @media only screen and (max-width: $breakpoint-phone) {
     padding: 16px;
   }
-
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    position: relative;
+  }
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
     padding: 24px 0 16px 24px;
   }

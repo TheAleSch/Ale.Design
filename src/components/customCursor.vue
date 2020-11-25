@@ -48,11 +48,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../scss/_variables.scss";
+
 .cursor {
   bottom: 0;
   right: 0;
   position: fixed;
   pointer-events: none;
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
+
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    display: none;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    display: none;
+  }
 }
 .cursor--small {
   width: 24px;

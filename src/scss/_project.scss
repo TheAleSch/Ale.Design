@@ -1,171 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
 @import "./_variables.scss";
 
 .bfb_projects {
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-		background-color: blue;
-	height: 70vh;
-	width: 100vw;
-	background-image: url("./assets/financialapp/cover.png");
-	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 1;
-	@media only screen and (max-width: $breakpoint-phone) {
-		height: 60vh;
-		}
-		@media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
-			height: 80vh;
-		}
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgb(32, 32, 37);
+  height: 70vh;
+  width: 100vw;
+  background-image: url("./assets/financialapp/cover.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+  @media only screen and (max-width: $breakpoint-phone) {
+    height: 60vh;
+    background-attachment: scroll;
+  }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    height: 80vh;
+    background-attachment: scroll;
+  }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    height: 80vh;
+    background-attachment: scroll;
+    padding-left: 32px;
+    h1 {
+      font-size: 80px;
+    }
+  }
 
-	.content {
-	max-width: 1400px;
-	height: 100%;
-	width: 100%;
-	padding: 72px 24px;
-	display: flex;
-	align-items: flex-end;
+  .content {
+    max-width: 1400px;
+    height: 100%;
+    width: 100%;
+    padding: 72px 24px;
+    display: flex;
+    align-items: flex-end;
 
-	h1{
-		margin: 0;
-		color: white;
-	}
-}
+    h1 {
+      margin: 0;
+      color: white;
+    }
+  }
 }
 .father {
-	max-width: 1008px;
-	margin: 0 auto;
-	padding: 24px ;
-	}
-	
+  max-width: 1008px;
+  margin: 0 auto;
+  padding: 24px;
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    max-width: 90%;
+  }
+}
 
 .hide-mobile {
-	
-	@media only screen and (max-width: $breakpoint-phone) {
-		display: none;
-		}
+  @media only screen and (max-width: $breakpoint-phone) {
+    display: none;
+  }
 }
-/* Flex */ 
+/* Flex */
 
 .flex {
-	display: flex;
+  display: flex;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		flex-wrap: wrap;
-		img {
-			max-width: initial;
-			width: 100%;
-		}
-}
+  @media only screen and (max-width: $breakpoint-phone) {
+    flex-wrap: wrap;
+    img {
+      max-width: initial;
+      width: 100%;
+    }
+  }
 }
 
 .h-fit {
-	flex: 1 1 auto;	
+  flex: 1 1 auto;
 }
 
 .center {
-	justify-content: center;
+  justify-content: center;
 }
 
 .left {
-	justify-content: flex-start;
+  justify-content: flex-start;
 }
 .right {
-	justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .space-between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
-/* Padding */ 
+/* Padding */
 .pad-top-1x {
-	padding: 32px 0 0 0;
+  padding: 32px 0 0 0;
 }
 
 .pad-top-2x {
-	padding: 40px 0 0 0;
+  padding: 40px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 32px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 32px 0 0 0;
+  }
 }
 .pad-top-3x {
-	padding: 64px 0 0 0;
+  padding: 64px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 48px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 48px 0 0 0;
+  }
 }
 .pad-top-4x {
-	padding: 96px 0 0 0;
+  padding: 96px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 64px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 64px 0 0 0;
+  }
 }
 .pad-top-5x {
-	padding: 112px 0 0 0;
+  padding: 112px 0 0 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 56px 0 0 0;	
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 56px 0 0 0;
+  }
 }
 
 .pad-top-1x-mobile {
-	// padding: 24px 0 0 0;
-	@media only screen and (max-width: $breakpoint-phone) {
-		padding: 16px 0 0 0;	
-	}
+  // padding: 24px 0 0 0;
+  @media only screen and (max-width: $breakpoint-phone) {
+    padding: 16px 0 0 0;
+  }
 }
-/* Grid */ 
+/* Grid */
 
 .grid-container {
   display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-column-gap: 48px;
-	grid-row-gap: 0;
+  grid-template-columns: 2fr 3fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0;
 
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-template-columns: 1fr;
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-template-columns: 1fr;
+  }
 }
 .grid-item {
-	@media only screen and (max-width: $breakpoint-phone) {
-		max-width: calc(100vw - 48px);
-	}
+  @media only screen and (max-width: $breakpoint-phone) {
+    max-width: calc(100vw - 48px);
+  }
 }
 
 .item-full {
-	grid-column: 1/5;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
-	}
+  grid-column: 1/5;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
+}
 
 .item-2 {
-	grid-column: 1/2;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
-	}
+  grid-column: 1/2;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
+}
 .item-3 {
-	grid-column: 2/5;
-	@media only screen and (max-width: $breakpoint-phone) {
-		grid-column: 1;
-	}
+  grid-column: 2/5;
+  @media only screen and (max-width: $breakpoint-phone) {
+    grid-column: 1;
+  }
 }
 
-
-/* img */ 
+/* img */
 .img-plus {
-	max-width:90%;
+  max-width: 90%;
 }
 .img-single {
-	max-width:100%;
+  max-width: 100%;
 }

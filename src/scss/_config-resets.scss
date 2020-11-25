@@ -6,6 +6,7 @@
 // fix for blend mode (mouse over) to work on all cards
 html {
     background: #fff;
+    padding: env(safe-area-inset);
     }
 
     html::selection, *::selection {
@@ -18,6 +19,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;
+//iphone x fix
+    // padding: env(safe-area-inset);
+
+
 
 }
 

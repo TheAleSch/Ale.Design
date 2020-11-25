@@ -100,7 +100,7 @@ export default {
   padding-left: 64px;
   justify-content: space-between;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 32px;
   margin-bottom: 200px;
 
   @media only screen and (max-width: $breakpoint-phone) {
@@ -112,6 +112,15 @@ export default {
     margin-top: 100px;
     margin-bottom: 152px;
   }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    max-width: 80%;
+    padding: 16px;
+    padding-left: 32px;
+    margin-bottom: 96px;
+    margin-top: 0;
+  }
+
   @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
     max-width: 75vw;
     margin-left: 0;
@@ -137,11 +146,15 @@ export default {
     padding-top: 48px;
     width: 380px;
   }
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .thumb {
   align-self: center;
-  margin-right: -200px;
+  margin-right: -120px;
   img {
     max-width: 600px;
     @media only screen and (max-width: $breakpoint-phone) {
@@ -150,6 +163,9 @@ export default {
     @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
       max-width: 46vw;
       min-width: 240px;
+    }
+    @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+      max-width: 40vw;
     }
   }
   @media only screen and (max-width: $breakpoint-phone) {
@@ -206,6 +222,10 @@ a {
   svg {
     margin-left: 8px;
     transition: all 0.2s ease-in-out;
+  }
+
+  @media only screen and (min-device-width: 375px) and (max-device-width: 899px) and (orientation: landscape) {
+    padding-top: 32px;
   }
   @media only screen and (max-width: $breakpoint-phone) {
     padding-top: 48px;

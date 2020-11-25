@@ -76,5 +76,13 @@ export default {
 
 .projects {
   grid-area: projects;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media only screen and (max-width: $breakpoint-phone) {
+  }
+  @media only screen and (min-device-width: $breakpoint-tablet-portrait) and (max-device-width: $breakpoint-tablet-landscape) {
+    align-items: flex-start;
+  }
 }
 </style>
