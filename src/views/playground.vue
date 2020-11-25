@@ -1,1 +1,14 @@
-The "Moodboard" is a collection of Tobias van Schneider's personal work and experiments. These artifacts are either snippets from larger projects, photography or simply just experiments from the past 10+ years. © Tobias van Schneider
+<template>
+  <div>
+    <div class="father">
+      <h1>Playground</h1>
+      <h4>Soon, come back in the next weeks (;</h4>
+      <br />
+      <p>
+        The "Playground" is a place where you can see some of my personal your
+        and experiments. All of this are just for learning/experimenting
+        purposes might be part of some project or not.
+      </p>
+    </div>
+  </div>
+</template>

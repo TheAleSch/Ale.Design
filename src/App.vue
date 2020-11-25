@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link>
       <router-link to="/about">About me</router-link>
+      <router-link to="/playground">Playground</router-link>
     </div>
     <transition name="fade" mode="out-in">
       <router-view />

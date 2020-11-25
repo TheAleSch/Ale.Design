@@ -1,8 +1,12 @@
-
 <template>
   <div class="feature">
     <div v-for="item in featureItems" :key="item.id" class="item">
-      <a :href="item.externalLink" target="_blank">
+      <a
+        @mouseover="mouseOver"
+        @mouseleave="mouseOut"
+        :href="item.externalLink"
+        target="_blank"
+      >
         <h4>{{ item.title }}</h4></a
       >
       <span>{{ item.year }} - {{ item.language }}</span>
@@ -11,15 +15,16 @@
 </template>
 
 <script>
+import eventbus from "@/eventbus";
+
 export default {
   name: "featureList",
-  data: function () {
+  data: function() {
     return {
       featureItems: [
         {
           id: 1,
-          title:
-            "Talk: Product Design Process: How to create great products!",
+          title: "Talk: Product Design Process: How to create great products!",
           year: "2020",
           language: "Portuguese",
           externalLink: "https://youtu.be/d_I-0LPYZ1g",
@@ -40,6 +45,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    mouseOver() {
+      eventbus.$emit("mouseOn");
+    },
+    mouseOut() {
+      eventbus.$emit("mouseOff");
+    },
   },
 };
 </script>
@@ -69,11 +82,11 @@ export default {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
-a {
-      &:hover{
+    a {
+      &:hover {
         color: #ff1e00 !important;
       }
-}
+    }
     @media only screen and (max-width: $breakpoint-phone) {
       margin-bottom: 32px;
     }
