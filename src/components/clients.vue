@@ -1,15 +1,10 @@
 <template>
-  <!-- mouseover e mouseleave para trigger nos eventos especificados -->
   <div :style="cssVars" class="projectcard">
     <div class="content">
       <h4>{{ title }}</h4>
       <p class="pad-top-1x">{{ desc }}</p>
 
-      <router-link
-        @mouseover.native="mouseOver"
-        @mouseleave.native="mouseOut"
-        :to="projectRoute"
-      >
+      <router-link :to="projectRoute">
         See project
         <svg
           width="32"
@@ -24,8 +19,6 @@
           /></svg
       ></router-link>
       <a
-        @mouseover="mouseOver"
-        @mouseleave="mouseOut"
         :href="externalLink"
         target="_blank"
         v-if="externalLink && externalLink.length"
@@ -51,8 +44,6 @@
 </template>
 
 <script>
-import eventbus from "@/eventbus";
-
 export default {
   name: "projectCard",
   props: {
@@ -63,22 +54,10 @@ export default {
     projectRoute: String,
     externalLink: String,
   },
-  methods: {
-    // emite um evento quando o mouse sobe
-    mouseOver() {
-      eventbus.$emit("mouseOn");
-    },
-    // emite um evento quando o mouse sai
-    mouseOut() {
-      eventbus.$emit("mouseOff");
-    },
-  },
   computed: {
-    // função para poder o webpack pegar e inserir a imagem que veio de prop
     picturePath() {
       return require(`../assets/works/${this.picture}`);
     },
-    // inserir variavel no css
     cssVars() {
       return {
         /* variables you want to pass to css */

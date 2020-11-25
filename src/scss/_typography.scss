@@ -274,32 +274,3 @@ line-height: 170%;
   .link:hover .settings-icon__group--3 .settings-icon__rect {
 	transform: translateY(25px);
   } 
-  
-  .cursor {
-	position: fixed;
-	left: 0;
-	top: 0;
-	pointer-events: none;
-  }
-  .cursor--small {
-	width: 16px;
-	height: 16px;
-	left: -8px;
-	top: -8px;
-	border-radius: 50%;
-	z-index: 100000;
-	border: rgba(0, 0, 0, 1) 4px solid;
-	  transition: width 300ms, height 300ms;
-	  mix-blend-mode: exclusion;
-	  background-color: #fff;
-  }
-  
-  .project-box:hover ~ .cursor--small {
-	  width: 40px;
-	  height: 40px;
-	  left: -20px;
-	  top: -20px;
-	  border: #000 6px solid;
-  
-	  
-  }

@@ -1,19 +1,25 @@
 * {
     box-sizing: border-box;
+    cursor: none !important;
 
 }
-*::selection {
+// fix for blend mode (mouse over) to work on all cards
+html {
+    background: #fff;
+    }
+
+    html::selection, *::selection {
     background: #ff1e00;
     color: black;
   }
+
 body {
     width: 100vw;
     padding: 0;
     margin: 0;
     font-family: 'Jost', sans-serif;
-    
-}
 
+}
 
 a {
     transition: opacity 0.2s ease-in-out;

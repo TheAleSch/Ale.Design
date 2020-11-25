@@ -7,11 +7,36 @@
     <transition name="fade" mode="out-in">
       <router-view />
     </transition>
+
+    <customCursor>
+      <!-- expondo os bindings para o pai -->
+      <template v-slot="{ position, isSmall }">
+        <!-- :class testa se a condicao isSmall é verdadeira e adiciona a classe (do hover) / posiciona a div no mouse-->
+        <div
+          class="cursor cursor--small"
+          :class="{ cursorHover: isSmall }"
+          :style="{
+            transform: `translate(${position.X}px, ${position.Y}px)`,
+          }"
+        ></div>
+      </template>
+    </customCursor>
+
     <footer>
       <p>Made with ❤ in São Paulo ~ Proudly coded by me using VueJS</p>
     </footer>
   </div>
 </template>
+
+<script>
+import customCursor from "@/components/customCursor.vue";
+
+export default {
+  components: {
+    customCursor,
+  },
+};
+</script>
 
 <style lang="scss">
 @import "./scss/_typography.scss";

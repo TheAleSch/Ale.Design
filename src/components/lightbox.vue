@@ -1,31 +1,42 @@
 <template>
-    <div  v-on:click="openLightbox" v-bind:class="{ 'lightbox-active': isOpen }" class="lightbox-backdrop">
-      <slot/>
-          <!-- <button type="button" class="btn-close"  @click="show()" aria-label="Close modal" >
-        x 
-      </button> -->
+  <!-- mouseover e mouseleave para trigger nos eventos especificados -->
 
-    </div>
+  <div
+    @mouseover="mouseOver"
+    @mouseleave="mouseOut"
+    v-on:click="openLightbox"
+    v-bind:class="{ 'lightbox-active': isOpen }"
+    class="lightbox-backdrop"
+  >
+    <slot />
+  </div>
 </template>
 
 <script>
+import eventbus from "@/eventbus";
+
 export default {
- data() {
+  data() {
     return {
       isOpen: false,
-    }
+    };
   },
-  methods:{
-   openLightbox(){
-     this.isOpen = !this.isOpen;
-   }
-  }
+  methods: {
+    openLightbox() {
+      this.isOpen = !this.isOpen;
+    },
+    mouseOver() {
+      eventbus.$emit("mouseOn");
+    },
+    mouseOut() {
+      eventbus.$emit("mouseOff");
+    },
+  },
 };
-  
 </script>
 <style lang="scss" scoped>
 .lightbox-backdrop {
-cursor: zoom-in;
+  cursor: zoom-in;
 }
 .lightbox-active {
   backdrop-filter: blur(16px);
@@ -40,14 +51,12 @@ cursor: zoom-in;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 
   img {
     background: #ffffff;
     max-width: 90vw;
     max-height: 90vh;
-          border: 8px solid #fff;
-
+    border: 8px solid #fff;
   }
   .btn-close {
     border: none;
@@ -61,17 +70,14 @@ cursor: zoom-in;
     margin: 8px;
   }
 }
-
-
 </style>
-<style lang="scss" >
-
-
+<style lang="scss">
 .lightbox-active {
-  img, svg {
-          border: 16px solid #fff;
-          background-color: white;
-          border-radius: 2px;
+  img,
+  svg {
+    border: 16px solid #fff;
+    background-color: white;
+    border-radius: 2px;
   }
 }
 .lightbox-enter,
